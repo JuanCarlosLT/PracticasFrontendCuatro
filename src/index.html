@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex JCLT</title>
+    <link rel="stylesheet" href="./pokedex.css">
+</head>
+
+<body>
+    <section style="text-align: center;">
+        <h1 class="titulo">Pokedex Launch-X</h1>
+        
+        <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+        <button onclick="fetchPokemon()">Buscar Pokemon</button>
+    </section>
+    <section class="sectionPokedex">
+        <div class="imagenPokemon">
+            <img class="margenesImagenPokemon" src="../asset/imag/pokeball.png" alt="Pokemon" id="pokeImg" width="200px">
+        </div>
+        <div class="nombrePokemon">
+            <p id="nombrePokemon"></p>
+        </div>
+        <div class="infoUnoPokemon">
+            <div style="height: 60px;">
+                <label>Tipo: </label>
+                <p id="textoTipo"></p>
+            </div>
+            <div style="height: 110px;">
+                <label for="texto">Estadisticas:</label>
+                <div>
+                    <div class="alinearblock">
+                        <p id="textoEstadisticasUno"></p>
+                    </div>
+                    <div class="alinearblock">
+                        <p id="textoEstadisticasDos"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="infoDosPokemon">
+            <div>
+                <label>Movimientos: </label>
+                <p id="textoMovimientos"></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <script src="./pokedex.js"></script>
+    </footer>
+</body>
+
+</html>
